@@ -34,7 +34,8 @@ mafft input.fasta > aligned.fasta
 # MEGA v11.0.13 installed. Sample data to run with MrBayes is attached to repository.
 
 # To draw haplotype maps, ensure QGIS is installed. Sample .csv file for import to QGIS is
-# attached to repository (location_coords.csv).
+# attached to repository (location_coords.csv). Haplotype data for both markers has to be 
+# extracted from DNA polymorphism analyses.
 
 # END #
 
