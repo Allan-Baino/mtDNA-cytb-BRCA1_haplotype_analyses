@@ -5,7 +5,7 @@
 
 **Data description & availability**: 74 Cytb and 52 BRCA1 unaligned sequences are available on NCBI/GenBank with accession numbers PZ833940-PZ834013 and PZ844720-PZ844771. In the cytb_BRCA1.txt file, a set of instructions to wrangle the data are available. Users are welcome to try analyses with different software especially where licensing is limiting (e.g. Geneious). It is anticipated that differences in software algorithm(s) will not significantly alter biological conclusions (users will likely arrive at the same conclusions within published article).
 
-**Script/.txt file description**: A guide on analysis route chosen by authors.
+**Script/cytb_BRCA1.txt file description**: A guide on analysis route chosen by authors.
 
 Please cite or acknowledge where this work has been helpful.
 
