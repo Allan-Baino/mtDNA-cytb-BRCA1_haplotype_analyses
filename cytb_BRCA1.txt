@@ -1,0 +1,47 @@
+# Below are a set of instructions that will be useful when analysing cytb and BRCA1 data
+# associated with GenBank Accession(s) PZ833940-PZ834013, PZ844720-PZ844771. 
+
+# For all analyses users will have to follow instructions on the materials and methods section 
+# in published article.
+
+# Download both marker seq data from GenBank accessions above, I recommend aligning sequences 
+# with installed MAFFT v7.45 on CLI.
+
+# CLI prompt with active conda env MAFFT
+mafft input.fasta > aligned.fasta 
+
+# Alternatively you can use other software such as BioEdit, Arlequin etc.
+
+# Sequences were then imported into software Geneious for alignment to mtDNA and BRCA1 
+# references. mtDNA and BRCA1 refs from R. norvegicus were used. This is an important step in 
+# visualising sample seqs relative to their refs and also validation that right target region 
+# was captured by sequencing effort.
+
+# Alternatively you can use BioEdit for ref alignment visuals will differ but output should be
+# consistent with Geneious.
+
+# Export nexus formatted seqs from both markers for entry into DnaSP v6 to perform DNA 
+# polymorphism analyses. Seqs should be grouped by sampling locations KL,APOPO,IR,DOD,AR,
+# MR-SUA/KIR as appears on sample IDs before analyses.
+
+# For haplotype network analyses 1) ensure PopART v1.7 is installed, 2) data is formatted
+# correctly for entry into PopART see sample_PopART_data.nexus and locations_coords.csv 
+# attached to repository. Users would need combine coords(from locations_coords.csv) and 
+# seq data to make a complete .nexus file that can be imported into PopART for analysis.
+# N.B APOPO and MR-KIR/SUA samples share coords.
+
+# For phylogenetic analyses 1) install MrBayes v3.2.7 better as a conda env, 2) ensure you have
+# MEGA v11.0.13 installed. Sample data to run with MrBayes is attached to repository.
+
+# To draw haplotype maps, ensure QGIS is installed. Sample .csv file for import to QGIS is
+# attached to repository (location_coords.csv).
+
+# END #
+
+  
+  
+
+        
+
+
+ 
