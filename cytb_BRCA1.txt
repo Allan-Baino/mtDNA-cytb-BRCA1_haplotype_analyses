@@ -2,7 +2,7 @@
 # associated with GenBank Accession(s) PZ833940-PZ834013, PZ844720-PZ844771. 
 
 # For all analyses users will have to follow instructions on the materials and methods section 
-# in published article.
+# within published article.
 
 # Download both marker seq data from GenBank accessions above, I recommend aligning sequences 
 # with installed MAFFT v7.45 on CLI.
@@ -12,30 +12,32 @@ mafft input.fasta > aligned.fasta
 
 # Alternatively you can use other software such as BioEdit, Arlequin etc.
 
-# Sequences were then imported into software Geneious for alignment to mtDNA and BRCA1 
+# Sequences can then imported into software Geneious for alignment to mtDNA and BRCA1 
 # references. mtDNA and BRCA1 refs from R. norvegicus were used. This is an important step in 
-# visualising sample seqs relative to their refs and also validation that right target region 
-# was captured by sequencing effort.
+# visualising sample seqs positions relative to their refs and also validation that right target
+# region was captured by sequencing effort.
 
 # Alternatively you can use BioEdit for ref alignment visuals will differ but output should be
 # consistent with Geneious.
 
-# Export nexus formatted seqs from both markers for entry into DnaSP v6 to perform DNA 
+# Export nexus formatted seqs for both markers, enter nexus files into DnaSP v6 to perform DNA 
 # polymorphism analyses. Seqs should be grouped by sampling locations KL,APOPO,IR,DOD,AR,
-# MR-SUA/KIR as appears on sample IDs before analyses.
+# MR-SUA/KIR as appears on sample IDs before analyses. For BRCA1 data, group MR did distinguish
+# samples from KIR or SUA.
 
 # For haplotype network analyses 1) ensure PopART v1.7 is installed, 2) data is formatted
-# correctly for entry into PopART see sample_PopART_data.nexus and locations_coords.csv 
+# correctly for entry into PopART, see sample_PopART_data.nexus and locations_coords.csv 
 # attached to repository. Users would need combine coords(from locations_coords.csv) and 
 # seq data to make a complete .nexus file that can be imported into PopART for analysis.
-# N.B APOPO and MR-KIR/SUA samples share coords.
+# N.B APOPO and MR-KIR/SUA samples share coords (same geographic region).
 
-# For phylogenetic analyses 1) install MrBayes v3.2.7 better as a conda env, 2) ensure you have
-# MEGA v11.0.13 installed. Sample data to run with MrBayes is attached to repository.
+# For phylogenetic analyses 1) install MrBayes v3.2.7, better as a conda env, 2) ensure you have
+# MEGA v11.0.13 installed. Sample data (sample_MrBayes.NEX) to run with MrBayes is attached to repository.
 
 # To draw haplotype maps, ensure QGIS is installed. Sample .csv file for import to QGIS is
 # attached to repository (location_coords.csv). Haplotype data for both markers has to be 
-# extracted from DNA polymorphism analyses.
+# extracted from DNA polymorphism analyses from DnaSP or other software that the user may have
+# opted for.
 
 # END #
 
